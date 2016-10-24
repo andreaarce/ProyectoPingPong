@@ -82,6 +82,27 @@ class Pelota
             return b;
         }
 
+        int getPtosJugador1(){
+            /*stringstream pto;
+            pto<< ptsJugador1;
+            return pto.str();*/
+            return ptsJugador1;
+        }
+
+        int getPtosJugador2(){
+            /*stringstream pto;
+            pto<< ptsJugador2;
+            return pto.str();*/
+            return ptsJugador2;
+        }
+
+       /* void mostrarMarcador(){
+            char j1 = getPtosJugador1();
+            char j2 = getPtosJugador2();
+            outtextxy(100,520,j1);
+            outtextxy(540,520,j2);
+        }*/
+
     private:
         int x, y, a, b, ptsJugador1=0, ptsJugador2=0;
 };

@@ -1,18 +1,21 @@
 #include <iostream>
 #include <winbgim.h>
+#include <sstream>
+#include <stdlib.h>
 
 using namespace std;
 
-#include "Juego.h"
 #include "Barra.h"
 #include "Pelota.h"
+#include "Juego.h"
+
 
 
 int main()
 {
 
     char tecla;
-    bool juegoTerminado = false;
+    bool jugador = false , juegoTerminado = false;
     Juego juego;
     Pelota pelota;
 
@@ -23,9 +26,23 @@ int main()
     bar2.mostrar();
 
     do{
+        if (pelota.existeGanador()== true){
+                if (pelota.conocerGanador()==true){
+                    cout<<"Ganador Jugador 1!";
+                    juegoTerminado = true;
+                    system("pause");
+                }
+                else{
+                    cout<<"Ganador Jugador 2";
+                    juegoTerminado = true;
+                    system("pause");
+                }
+            }
         pelota.golpe(bar1,bar2);
         pelota.mueve();
+        juego.mostrarMarcador(pelota);
         while(kbhit()) {
+
             tecla = getch();
             switch(tecla){
                 case 'w':
@@ -48,18 +65,6 @@ int main()
                 break;
             }
         }
-
-        if (pelota.existeGanador()== true){
-            juegoTerminado = true;
-            if (pelota.conocerGanador()==true){
-                cout<<"Ganador Jugador 1!";
-            }
-            else{
-                cout<<"Ganador Jugador 2";
-            }
-
-        }
-
     }while(juegoTerminado==false);
 
     return 0;
