@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1477293726 source:c:\users\andrea\documents\maestria\poo\proyectopingpong\main.cpp
+	<iostream>
+	<winbgim.h>
+	"Juego.h"
+	"Barra.h"
+	"Pelota.h"
+
+1477289334 c:\users\andrea\documents\maestria\poo\proyectopingpong\juego.h
+
+1477293784 c:\users\andrea\documents\maestria\poo\proyectopingpong\pelota.h
+
+1477293078 c:\users\andrea\documents\maestria\poo\proyectopingpong\barra.h
+
