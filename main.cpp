@@ -28,16 +28,15 @@ int main()
     do{
         if (pelota.existeGanador()== true){
                 if (pelota.conocerGanador()==true){
-                    cout<<"Ganador Jugador 1!";
                     juegoTerminado = true;
                     system("pause");
                 }
                 else{
-                    cout<<"Ganador Jugador 2";
                     juegoTerminado = true;
                     system("pause");
                 }
-            }
+        }
+
         pelota.golpe(bar1,bar2);
         pelota.mueve();
         juego.mostrarMarcador(pelota);

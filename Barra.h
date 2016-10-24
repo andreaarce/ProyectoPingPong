@@ -46,6 +46,7 @@ class Barra{
                                 bottom-=5;
                                 setcolor(15);
                                 rectangle(left,top,right,bottom);
+                                line(1,460,640,460);
                             }
         }
         }

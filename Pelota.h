@@ -41,7 +41,10 @@ class Pelota
 
 
         void golpe(Barra b1, Barra b2){
-            if ((b2.getLeft()==x && b2.getRight()==x) || (b2.getTop() == y && b2.getBottom() ==y)){
+            if ((b2.getLeft()==x && b2.getRight()==x)){
+                a+=2;
+            }
+            if((b2.getTop() == y && b2.getBottom() ==y)){
                 b+=2;
             }
         }
