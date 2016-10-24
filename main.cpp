@@ -23,10 +23,10 @@ int main()
     bar2.mostrar();
 
     do{
+        pelota.golpe(bar1,bar2);
         pelota.mueve();
         while(kbhit()) {
             tecla = getch();
-            pelota.golpe(bar1,bar2);
             switch(tecla){
                 case 'w':
                 case 'W':
