@@ -13,7 +13,8 @@ class Barra{
             setbkcolor(15);
             setcolor(15);
             //Izquierda 30,280,50,180
-            rectangle(left,top,right,bottom);
+            line(right,top,right,bottom);
+            //rectangle(left,top,right,bottom);
             //Derecha 580,280,600,180
             //rectangle(left2,top2,right2,bottom2);
         }
@@ -23,30 +24,36 @@ class Barra{
                     if (movimiento == true){
                             if (bottom==360) {
                                     setcolor(15);
-                                    rectangle(left,top,right,bottom);
+                                    //rectangle(left,top,right,bottom);
+                                    line(right,top,right,bottom);
                             }
                             else{
                                 setcolor(0);
-                                rectangle(left,top,right,bottom);
+                                //rectangle(left,top,right,bottom);
+                                line(right,top,right,bottom);
                                 top+=10;
                                 bottom+=10;
                                 setcolor(15);
-                                rectangle(left,top,right,bottom);
+                                //rectangle(left,top,right,bottom);
+                                line(right,top,right,bottom);
                             }
                     }
                     else{
                         if (top == 110) {
                                     setcolor(15);
-                                    rectangle(left,top,right,bottom);
+                                    //rectangle(left,top,right,bottom);
+                                    line(right,top,right,bottom);
                             }
                             else{
                                 setcolor(0);
-                                rectangle(left,top,right,bottom);
+                                //rectangle(left,top,right,bottom);
+                                line(right,top,right,bottom);
                                 top-=10;
                                 bottom-=10;
                                 setcolor(15);
-                                rectangle(left,top,right,bottom);
-                                line(1,460,640,460);
+                                line(right,top,right,bottom);
+                                //rectangle(left,top,right,bottom);
+                                //line(1,460,640,460);
                             }
         }
         }

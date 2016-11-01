@@ -2,7 +2,7 @@ class Pelota
 {
     public:
         Pelota() {
-            x=48; y=16; a=2; b=2;
+            x=240; y=16; a=2; b=2;
         }
 
 
@@ -19,18 +19,18 @@ class Pelota
             if (((x==b2.getLeft()-12) && (x==b2.getRight())-12) && (y<=b2.getTop() || y<=b2.getBottom()) ){
                 a=-2;
             }
-            if (((x==b1.getLeft()) && (x==b1.getRight())) ){
-                a=-2;
+           if (((x==b1.getLeft()+30) && (x==b1.getRight())+30) && (y<=b1.getTop() || y<=b1.getBottom()) ){
+                a=2;
             }
 
             if (x==620) {
                     ptsJugador1++;
-                    x=48; y=16; a=2; b=2;
+                    x=240; y=16; a=2; b=2;
             }
             if (y==450) { b=-2; }
             if (x==10) {
                     ptsJugador2++;
-                    x=48; y=16; a=2; b=2;
+                    x=240; y=16; a=2; b=2;
             }
             if (y==8) { b=2; }
 
