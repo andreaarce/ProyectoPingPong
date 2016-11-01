@@ -37,8 +37,8 @@ int main()
                 }
         }
 
-        pelota.golpe(bar1,bar2);
-        pelota.mueve();
+        //pelota.golpe(bar1,bar2);
+        pelota.mueve(bar1,bar2);
         juego.mostrarMarcador(pelota);
         while(kbhit()) {
 

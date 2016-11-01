@@ -6,7 +6,7 @@ class Pelota
         }
 
 
-        void mueve() {
+        void mueve(Barra b1, Barra b2) {
             setcolor(15);
             //fillellipse(x, y, 8, 8);
             circle(x,y,8);
@@ -15,6 +15,13 @@ class Pelota
             circle(x,y,8);
             x=x+a;
             y=y+b;
+
+            if (((x==b2.getLeft()-12) && (x==b2.getRight())-12) && (y<=b2.getTop() || y<=b2.getBottom()) ){
+                a=-2;
+            }
+            if (((x==b1.getLeft()) && (x==b1.getRight())) ){
+                a=-2;
+            }
 
             if (x==620) {
                     ptsJugador1++;
@@ -41,13 +48,22 @@ class Pelota
 
 
         void golpe(Barra b1, Barra b2){
-            if ((b2.getLeft()==x && b2.getRight()==x)){
-                a+=2;
+            /*if ( (b1.getTop() == y)|| (b1.getBottom() == y)){
+                a=-2;
+            }*/
+             //(x>=b2.getTop()-12 ) && (x<=b2.getBottom()-12) &&
+            //&& (y===b2.getTop() && y==b2.getBottom())
+
+           /* if((b2.getTop()-12 == y && b2.getBottom()-12 ==y)){
+                b=-2;
+            }*/
+            /*if ((b1.getRight()-12 == x )){
+                a=+2;
+            }*/
+            /*if (b2.getLeft() >= y) {
+                a=+2;
+            }*/
             }
-            if((b2.getTop() == y && b2.getBottom() ==y)){
-                b+=2;
-            }
-        }
 
         bool existeGanador(){
             if (ptsJugador1 == 7 || ptsJugador2==7)

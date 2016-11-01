@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1477333878 source:c:\users\andrea\documents\maestria\poo\proyectopingpong\main.cpp
+1477962307 source:c:\users\andrea\documents\maestria\poo\proyectopingpong\main.cpp
 	<iostream>
 	<winbgim.h>
 	<sstream>
@@ -8,9 +8,9 @@
 	"Pelota.h"
 	"Juego.h"
 
-1477334487 c:\users\andrea\documents\maestria\poo\proyectopingpong\juego.h
+1477962800 c:\users\andrea\documents\maestria\poo\proyectopingpong\juego.h
 
-1477334796 c:\users\andrea\documents\maestria\poo\proyectopingpong\pelota.h
+1477962954 c:\users\andrea\documents\maestria\poo\proyectopingpong\pelota.h
 
-1477334875 c:\users\andrea\documents\maestria\poo\proyectopingpong\barra.h
+1477956942 c:\users\andrea\documents\maestria\poo\proyectopingpong\barra.h
 

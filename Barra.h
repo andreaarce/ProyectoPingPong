@@ -28,8 +28,8 @@ class Barra{
                             else{
                                 setcolor(0);
                                 rectangle(left,top,right,bottom);
-                                top+=5;
-                                bottom+=5;
+                                top+=10;
+                                bottom+=10;
                                 setcolor(15);
                                 rectangle(left,top,right,bottom);
                             }
@@ -42,8 +42,8 @@ class Barra{
                             else{
                                 setcolor(0);
                                 rectangle(left,top,right,bottom);
-                                top-=5;
-                                bottom-=5;
+                                top-=10;
+                                bottom-=10;
                                 setcolor(15);
                                 rectangle(left,top,right,bottom);
                                 line(1,460,640,460);
